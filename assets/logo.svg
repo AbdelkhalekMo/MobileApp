@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="40" viewBox="0 0 150 40">
+  <style>
+    .text { font-family: 'Arial', sans-serif; font-weight: bold; }
+    .service { fill: #4a6bff; }
+    .connect { fill: #00d09c; }
+  </style>
+  <text x="10" y="25" class="text service">Service</text>
+  <text x="70" y="25" class="text connect">Connect</text>
+</svg> 

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="600" viewBox="0 0 300 600">
+  <!-- Phone Frame -->
+  <defs>
+    <linearGradient id="frameGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#333333" />
+      <stop offset="100%" style="stop-color:#111111" />
+    </linearGradient>
+    <linearGradient id="screenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a6bff" />
+      <stop offset="100%" style="stop-color:#00d09c" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Phone Body -->
+  <rect x="10" y="10" width="280" height="580" rx="40" ry="40" fill="url(#frameGradient)" />
+  
+  <!-- Phone Screen -->
+  <rect x="25" y="50" width="250" height="500" rx="5" ry="5" fill="#ffffff" />
+  
+  <!-- Phone Details -->
+  <circle cx="150" cy="30" r="8" fill="#222222" />
+  <rect x="120" y="570" width="60" height="10" rx="5" ry="5" fill="#222222" />
+  
+  <!-- Screen Content - App Store Download -->
+  <!-- Header -->
+  <rect x="25" y="50" width="250" height="60" fill="url(#screenGradient)" />
+  <text x="150" y="85" font-family="Arial" font-size="18" fill="white" text-anchor="middle">Download App</text>
+  
+  <!-- App Store Buttons -->
+  <rect x="50" y="150" width="200" height="80" rx="15" ry="15" fill="#f8f8f8" stroke="#eaeaea" stroke-width="1" />
+  <circle cx="90" cy="190" r="25" fill="#000000" />
+  <path d="M80,185 L85,190 L80,195" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" />
+  <text x="150" y="185" font-family="Arial" font-size="14" fill="#333333" text-anchor="middle">App Store</text>
+  <text x="150" y="205" font-family="Arial" font-size="12" fill="#666666" text-anchor="middle">iOS devices</text>
+  
+  <rect x="50" y="250" width="200" height="80" rx="15" ry="15" fill="#f8f8f8" stroke="#eaeaea" stroke-width="1" />
+  <circle cx="90" cy="290" r="25" fill="#4a6bff" />
+  <path d="M80,285 L85,290 L80,295" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" />
+  <text x="150" y="285" font-family="Arial" font-size="14" fill="#333333" text-anchor="middle">Google Play</text>
+  <text x="150" y="305" font-family="Arial" font-size="12" fill="#666666" text-anchor="middle">Android devices</text>
+  
+  <!-- Progress Bar -->
+  <rect x="50" y="380" width="200" height="10" rx="5" ry="5" fill="#f0f0f0" />
+  <rect x="50" y="380" width="120" height="10" rx="5" ry="5" fill="url(#screenGradient)" />
+  <text x="150" y="420" font-family="Arial" font-size="14" fill="#666666" text-anchor="middle">Downloading... 60%</text>
+  
+  <!-- Bottom Navigation -->
+  <rect x="25" y="500" width="250" height="50" fill="#f8f8f8" />
+  <circle cx="75" cy="525" r="15" fill="#eeeeee" />
+  <circle cx="150" cy="525" r="15" fill="url(#screenGradient)" />
+  <circle cx="225" cy="525" r="15" fill="#eeeeee" />
+</svg> 

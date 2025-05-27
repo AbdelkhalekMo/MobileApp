@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="600" viewBox="0 0 300 600">
+  <!-- Phone Frame -->
+  <defs>
+    <linearGradient id="frameGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#333333" />
+      <stop offset="100%" style="stop-color:#111111" />
+    </linearGradient>
+    <linearGradient id="screenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a6bff" />
+      <stop offset="100%" style="stop-color:#00d09c" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Phone Body -->
+  <rect x="10" y="10" width="280" height="580" rx="40" ry="40" fill="url(#frameGradient)" />
+  
+  <!-- Phone Screen -->
+  <rect x="25" y="50" width="250" height="500" rx="5" ry="5" fill="#ffffff" />
+  
+  <!-- Phone Details -->
+  <circle cx="150" cy="30" r="8" fill="#222222" />
+  <rect x="120" y="570" width="60" height="10" rx="5" ry="5" fill="#222222" />
+  
+  <!-- Screen Content - Rating & Review -->
+  <!-- Header -->
+  <rect x="25" y="50" width="250" height="60" fill="url(#screenGradient)" />
+  <text x="150" y="85" font-family="Arial" font-size="18" fill="white" text-anchor="middle">Rate & Review</text>
+  
+  <!-- Service Provider -->
+  <rect x="40" y="130" width="220" height="80" rx="10" ry="10" fill="#f8f8f8" stroke="#eaeaea" stroke-width="1" />
+  <circle cx="80" cy="170" r="25" fill="#f0f0f0" />
+  <text x="80" y="175" font-family="Arial" font-size="16" fill="#4a6bff" text-anchor="middle">JD</text>
+  <text x="170" y="160" font-family="Arial" font-size="16" font-weight="bold" fill="#333333">John Doe</text>
+  <text x="170" y="180" font-family="Arial" font-size="14" fill="#666666">Plumber • Service Completed</text>
+  
+  <!-- Rating Stars -->
+  <text x="40" y="240" font-family="Arial" font-size="14" font-weight="bold" fill="#333333">Rate Your Experience</text>
+  <circle cx="70" cy="270" r="20" fill="#f8f8f8" stroke="#eaeaea" stroke-width="1" />
+  <text x="70" y="278" font-family="Arial" font-size="20" fill="#ffc107" text-anchor="middle">★</text>
+  
+  <circle cx="115" cy="270" r="20" fill="#f8f8f8" stroke="#eaeaea" stroke-width="1" />
+  <text x="115" y="278" font-family="Arial" font-size="20" fill="#ffc107" text-anchor="middle">★</text>
+  
+  <circle cx="160" cy="270" r="20" fill="#f8f8f8" stroke="#eaeaea" stroke-width="1" />
+  <text x="160" y="278" font-family="Arial" font-size="20" fill="#ffc107" text-anchor="middle">★</text>
+  
+  <circle cx="205" cy="270" r="20" fill="#f8f8f8" stroke="#eaeaea" stroke-width="1" />
+  <text x="205" y="278" font-family="Arial" font-size="20" fill="#ffc107" text-anchor="middle">★</text>
+  
+  <circle cx="250" cy="270" r="20" fill="#f8f8f8" stroke="#eaeaea" stroke-width="1" />
+  <text x="250" y="278" font-family="Arial" font-size="20" fill="#ffc107" text-anchor="middle">★</text>
+  
+  <!-- Review Text -->
+  <text x="40" y="320" font-family="Arial" font-size="14" font-weight="bold" fill="#333333">Write a Review</text>
+  <rect x="40" y="330" width="220" height="100" rx="5" ry="5" fill="#f8f8f8" stroke="#eaeaea" stroke-width="1" />
+  <text x="50" y="355" font-family="Arial" font-size="14" fill="#999999">Share your experience...</text>
+  
+  <!-- Add Photo -->
+  <text x="40" y="460" font-family="Arial" font-size="14" font-weight="bold" fill="#333333">Add Photos</text>
+  <rect x="40" y="470" width="70" height="70" rx="5" ry="5" fill="#f8f8f8" stroke="#eaeaea" stroke-width="1" />
+  <text x="75" y="505" font-family="Arial" font-size="24" fill="#999999" text-anchor="middle">+</text>
+  
+  <!-- Submit Button -->
+  <rect x="40" y="560" width="220" height="50" rx="25" ry="25" fill="url(#screenGradient)" />
+  <text x="150" y="590" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Submit Review</text>
+</svg> 

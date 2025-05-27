@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="400" viewBox="0 0 200 400">
+  <!-- Phone Screen -->
+  <rect x="0" y="0" width="200" height="400" rx="20" ry="20" fill="#111111" />
+  
+  <!-- Status Bar -->
+  <rect x="0" y="0" width="200" height="30" rx="20" ry="20" fill="#000000" />
+  <text x="20" y="20" font-family="Arial" font-size="12" fill="#ffffff">9:41</text>
+  <text x="180" y="20" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="end">100%</text>
+  
+  <!-- App Header -->
+  <rect x="0" y="30" width="200" height="50" fill="#111111" />
+  <text x="20" y="60" font-family="Arial" font-size="16" font-weight="bold" fill="#00d09c">Categories</text>
+  <circle cx="180" cy="55" r="15" fill="#222222" />
+  <text x="180" y="60" font-family="Arial" font-size="14" fill="#00d09c" text-anchor="middle">👤</text>
+  
+  <!-- Search Bar -->
+  <rect x="15" y="90" width="170" height="40" rx="20" ry="20" fill="#222222" />
+  <circle cx="35" cy="110" r="10" fill="none" stroke="#666666" stroke-width="2" />
+  <line x1="42" y1="117" x2="48" y2="123" stroke="#666666" stroke-width="2" stroke-linecap="round" />
+  <text x="70" y="115" font-family="Arial" font-size="14" fill="#666666">Search categories</text>
+  
+  <!-- Categories Grid -->
+  <defs>
+    <linearGradient id="catGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a6bff" />
+      <stop offset="100%" style="stop-color:#6a8bff" />
+    </linearGradient>
+    <linearGradient id="catGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d09c" />
+      <stop offset="100%" style="stop-color:#20f0bc" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Category Row 1 -->
+  <rect x="15" y="145" width="80" height="80" rx="10" ry="10" fill="url(#catGradient1)" />
+  <text x="55" y="185" font-family="Arial" font-size="16" fill="#ffffff" text-anchor="middle">🔧</text>
+  <text x="55" y="210" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle">Plumbing</text>
+  
+  <rect x="105" y="145" width="80" height="80" rx="10" ry="10" fill="url(#catGradient2)" />
+  <text x="145" y="185" font-family="Arial" font-size="16" fill="#ffffff" text-anchor="middle">🧹</text>
+  <text x="145" y="210" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle">Cleaning</text>
+  
+  <!-- Category Row 2 -->
+  <rect x="15" y="235" width="80" height="80" rx="10" ry="10" fill="url(#catGradient2)" />
+  <text x="55" y="275" font-family="Arial" font-size="16" fill="#ffffff" text-anchor="middle">🔌</text>
+  <text x="55" y="300" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle">Electrical</text>
+  
+  <rect x="105" y="235" width="80" height="80" rx="10" ry="10" fill="url(#catGradient1)" />
+  <text x="145" y="275" font-family="Arial" font-size="16" fill="#ffffff" text-anchor="middle">🏠</text>
+  <text x="145" y="300" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle">Home Repair</text>
+  
+  <!-- Category Row 3 -->
+  <rect x="15" y="325" width="80" height="40" rx="10" ry="10" fill="#333333" />
+  <text x="55" y="350" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle">View All</text>
+  
+  <!-- Bottom Navigation -->
+  <rect x="0" y="370" width="200" height="30" fill="#111111" />
+  <circle cx="40" cy="385" r="10" fill="#333333" />
+  <text x="40" y="389" font-family="Arial" font-size="10" fill="#ffffff" text-anchor="middle">🏠</text>
+  
+  <circle cx="100" cy="385" r="10" fill="#00d09c" />
+  <text x="100" y="389" font-family="Arial" font-size="10" fill="#111111" text-anchor="middle">🔍</text>
+  
+  <circle cx="160" cy="385" r="10" fill="#333333" />
+  <text x="160" y="389" font-family="Arial" font-size="10" fill="#ffffff" text-anchor="middle">📋</text>
+</svg> 

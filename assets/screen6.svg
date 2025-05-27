@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="400" viewBox="0 0 200 400">
+  <!-- Phone Screen -->
+  <rect x="0" y="0" width="200" height="400" rx="20" ry="20" fill="#111111" />
+  
+  <!-- Status Bar -->
+  <rect x="0" y="0" width="200" height="30" rx="20" ry="20" fill="#000000" />
+  <text x="20" y="20" font-family="Arial" font-size="12" fill="#ffffff">9:41</text>
+  <text x="180" y="20" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="end">100%</text>
+  
+  <!-- App Header -->
+  <rect x="0" y="30" width="200" height="50" fill="#111111" />
+  <text x="20" y="60" font-family="Arial" font-size="16" font-weight="bold" fill="#00d09c">Reviews</text>
+  <circle cx="180" cy="55" r="15" fill="#222222" />
+  <text x="180" y="60" font-family="Arial" font-size="14" fill="#00d09c" text-anchor="middle">←</text>
+  
+  <!-- Rating Summary -->
+  <rect x="20" y="90" width="160" height="80" rx="10" ry="10" fill="#222222" />
+  
+  <text x="100" y="115" font-family="Arial" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">4.8</text>
+  <text x="100" y="135" font-family="Arial" font-size="12" fill="#666666" text-anchor="middle">based on 128 reviews</text>
+  
+  <!-- Star Rating -->
+  <text x="50" y="160" font-family="Arial" font-size="16" fill="#ffc107" text-anchor="middle">★★★★</text>
+  <text x="142" y="160" font-family="Arial" font-size="16" fill="#666666" text-anchor="middle">★</text>
+  
+  <!-- Reviews -->
+  <text x="20" y="190" font-family="Arial" font-size="16" font-weight="bold" fill="#ffffff">Recent Reviews</text>
+  
+  <!-- Review 1 -->
+  <rect x="20" y="205" width="160" height="80" rx="10" ry="10" fill="#222222" />
+  <circle cx="40" cy="225" r="15" fill="#333333" />
+  <text x="40" y="230" font-family="Arial" font-size="12" fill="#00d09c" text-anchor="middle">JW</text>
+  <text x="65" y="220" font-family="Arial" font-size="14" font-weight="bold" fill="#ffffff">Jane Wilson</text>
+  <text x="65" y="235" font-family="Arial" font-size="12" fill="#ffc107">★★★★★</text>
+  <text x="20" y="255" font-family="Arial" font-size="12" fill="#cccccc" x="30">Great service! Very professional and...</text>
+  <text x="160" y="275" font-family="Arial" font-size="10" fill="#666666" text-anchor="end">2 days ago</text>
+  
+  <!-- Review 2 -->
+  <rect x="20" y="295" width="160" height="80" rx="10" ry="10" fill="#222222" />
+  <circle cx="40" cy="315" r="15" fill="#333333" />
+  <text x="40" y="320" font-family="Arial" font-size="12" fill="#00d09c" text-anchor="middle">MS</text>
+  <text x="65" y="310" font-family="Arial" font-size="14" font-weight="bold" fill="#ffffff">Mike Smith</text>
+  <text x="65" y="325" font-family="Arial" font-size="12" fill="#ffc107">★★★★</text>
+  <text x="20" y="345" font-family="Arial" font-size="12" fill="#cccccc" x="30">Fixed my issue quickly. Would recommend...</text>
+  <text x="160" y="365" font-family="Arial" font-size="10" fill="#666666" text-anchor="end">1 week ago</text>
+  
+  <!-- Write Review Button -->
+  <rect x="50" y="385" width="100" height="40" rx="20" ry="20" fill="url(#reviewGradient)" />
+  <defs>
+    <linearGradient id="reviewGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4a6bff" />
+      <stop offset="100%" style="stop-color:#00d09c" />
+    </linearGradient>
+  </defs>
+  <text x="100" y="410" font-family="Arial" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">Write Review</text>
+</svg> 

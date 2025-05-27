@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="400" viewBox="0 0 200 400">
+  <!-- Phone Frame -->
+  <defs>
+    <linearGradient id="frameGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#333333" />
+      <stop offset="100%" style="stop-color:#111111" />
+    </linearGradient>
+    <linearGradient id="screenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d09c" />
+      <stop offset="100%" style="stop-color:#4a6bff" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Phone Body -->
+  <rect x="10" y="10" width="180" height="380" rx="30" ry="30" fill="url(#frameGradient)" />
+  
+  <!-- Phone Screen -->
+  <rect x="20" y="40" width="160" height="320" rx="5" ry="5" fill="url(#screenGradient)" />
+  
+  <!-- Phone Details -->
+  <circle cx="100" cy="25" r="5" fill="#222222" />
+  <rect x="80" y="375" width="40" height="5" rx="2.5" ry="2.5" fill="#222222" />
+  
+  <!-- Screen Content - Service List -->
+  <!-- Header -->
+  <rect x="20" y="40" width="160" height="40" fill="#ffffff" opacity="0.2" />
+  <rect x="40" y="55" width="120" height="10" rx="5" ry="5" fill="#ffffff" />
+  
+  <!-- Service Categories -->
+  <rect x="30" y="100" width="140" height="40" rx="5" ry="5" fill="#ffffff" />
+  <rect x="40" y="115" width="80" height="10" rx="5" ry="5" fill="#00d09c" />
+  
+  <rect x="30" y="150" width="140" height="40" rx="5" ry="5" fill="#ffffff" />
+  <rect x="40" y="165" width="100" height="10" rx="5" ry="5" fill="#00d09c" />
+  
+  <rect x="30" y="200" width="140" height="40" rx="5" ry="5" fill="#ffffff" />
+  <rect x="40" y="215" width="90" height="10" rx="5" ry="5" fill="#00d09c" />
+  
+  <rect x="30" y="250" width="140" height="40" rx="5" ry="5" fill="#ffffff" />
+  <rect x="40" y="265" width="70" height="10" rx="5" ry="5" fill="#00d09c" />
+  
+  <rect x="30" y="300" width="140" height="40" rx="5" ry="5" fill="#ffffff" />
+  <rect x="40" y="315" width="110" height="10" rx="5" ry="5" fill="#00d09c" />
+</svg> 

@@ -1,0 +1,111 @@
+[data-aos] {
+    opacity: 0;
+    transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+}
+
+[data-aos="fade-up"] {
+    transform: translateY(50px);
+}
+
+[data-aos="fade-up"].aos-animate {
+    transform: translateY(0);
+}
+
+[data-aos="fade-down"] {
+    transform: translateY(-50px);
+}
+
+[data-aos="fade-down"].aos-animate {
+    transform: translateY(0);
+}
+
+[data-aos="fade-right"] {
+    transform: translateX(-50px);
+}
+
+[data-aos="fade-right"].aos-animate {
+    transform: translateX(0);
+}
+
+[data-aos="fade-left"] {
+    transform: translateX(50px);
+}
+
+[data-aos="fade-left"].aos-animate {
+    transform: translateX(0);
+}
+
+[data-aos="zoom-in"] {
+    transform: scale(0.6);
+}
+
+[data-aos="zoom-in"].aos-animate {
+    transform: scale(1);
+}
+
+[data-aos="zoom-out"] {
+    transform: scale(1.2);
+}
+
+[data-aos="zoom-out"].aos-animate {
+    transform: scale(1);
+}
+
+[data-aos="flip-left"] {
+    transform: perspective(2500px) rotateY(-100deg);
+}
+
+[data-aos="flip-left"].aos-animate {
+    transform: perspective(2500px) rotateY(0);
+}
+
+[data-aos="flip-right"] {
+    transform: perspective(2500px) rotateY(100deg);
+}
+
+[data-aos="flip-right"].aos-animate {
+    transform: perspective(2500px) rotateY(0);
+}
+
+[data-aos="flip-up"] {
+    transform: perspective(2500px) rotateX(-100deg);
+}
+
+[data-aos="flip-up"].aos-animate {
+    transform: perspective(2500px) rotateX(0);
+}
+
+[data-aos="flip-down"] {
+    transform: perspective(2500px) rotateX(100deg);
+}
+
+[data-aos="flip-down"].aos-animate {
+    transform: perspective(2500px) rotateX(0);
+}
+
+[data-aos~="duration-300"] {transition-duration: 300ms;}
+[data-aos~="duration-500"] {transition-duration: 500ms;}
+[data-aos~="duration-800"] {transition-duration: 800ms;}
+[data-aos~="duration-1000"] {transition-duration: 1000ms;}
+[data-aos~="duration-1500"] {transition-duration: 1500ms;}
+[data-aos~="duration-2000"] {transition-duration: 2000ms;}
+
+[data-aos~="delay-100"] {transition-delay: 100ms;}
+[data-aos~="delay-200"] {transition-delay: 200ms;}
+[data-aos~="delay-300"] {transition-delay: 300ms;}
+[data-aos~="delay-400"] {transition-delay: 400ms;}
+[data-aos~="delay-500"] {transition-delay: 500ms;}
+[data-aos~="delay-700"] {transition-delay: 700ms;}
+[data-aos~="delay-1000"] {transition-delay: 1000ms;}
+
+[data-aos~="ease"] {transition-timing-function: ease;}
+[data-aos~="ease-in"] {transition-timing-function: ease-in;}
+[data-aos~="ease-out"] {transition-timing-function: ease-out;}
+[data-aos~="ease-in-out"] {transition-timing-function: ease-in-out;}
+[data-aos~="ease-in-back"] {transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);}
+[data-aos~="ease-out-back"] {transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);}
+[data-aos~="ease-in-out-back"] {transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);} 

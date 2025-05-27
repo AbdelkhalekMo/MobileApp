@@ -1,0 +1,31 @@
+This directory should contain the following images:
+
+1. logo.png - Your app logo
+2. favicon.ico - Website favicon
+3. hero-app.png - Main app screenshot for the hero section
+4. app-screen1.png and app-screen2.png - Floating app screenshots
+5. step1.png, step2.png, step3.png - Images for the "How It Works" section
+6. screen1.png through screen5.png - App screenshots for the carousel
+7. google-play.png and app-store.png - Store badges
+8. phone-frame.png - Phone frame to overlay on app screenshots
+9. phone-mockup1.png, phone-mockup2.png, phone-mockup3.png - Phone mockups with app screens
+
+You can use images from your own app or create placeholder images using tools like:
+- Figma
+- Adobe XD
+- Sketch
+- Canva
+- Placeit.net
+
+For quick placeholders, you can also use services like:
+- https://placeholder.com/
+- https://placehold.co/
+- https://picsum.photos/
+
+Example usage for placeholder:
+https://placehold.co/300x600?text=App+Screenshot 
+
+For phone mockups, you can use:
+- https://mockuphone.com/
+- https://smartmockups.com/
+- https://www.freepik.com/free-photos-vectors/phone-mockup 
