@@ -27,12 +27,28 @@
             <div class="language-switch">
                 <a href="#">اللغة العربية</a>
             </div>
-            <div class="hamburger">
+            <div class="hamburger" id="hamburger-toggle">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
         </nav>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu-links">
+                <a href="#hero">Home</a>
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#policy">Terms and Policies</a>
+                <a href="#app-screens">App Interface</a>
+                <a href="#footer">Contact Us</a>
+                <a href="#">اللغة العربية</a>
+            </div>
+        </div>
+        
+        <!-- Menu Overlay -->
+        <div class="menu-overlay" id="menu-overlay"></div>
     </header>
 
     <section id="hero" class="hero">
@@ -373,5 +389,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
+    <script src="mobile-menu.js"></script>
 </body>
 </html> 
