@@ -159,15 +159,28 @@ nav {
     padding: 16px 5%; /* Reduced from 20px */
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .logo img {
-    height: 32px; /* Reduced from 40px */
+    height: 50px; /* Increased from 32px to make it larger */
+    width: auto;
+}
+
+.company-name {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary-color);
 }
 
 .nav-links {
     display: flex;
     gap: 25px;
-    margin-left: 90px;
-    margin-left: auto; /* Push nav items to the right */
+    margin-left: auto; /* Changed from 90px to auto to push to the right */
+    margin-right: 20px; /* Added margin-right to create space between nav links and language switch */
 }
 
 .nav-links a {
@@ -607,61 +620,195 @@ nav {
     .features-right .feature-card {
         transform: translateY(30px);
     }
+    
+    .logo img {
+        height: 45px; /* Slightly smaller on tablets */
+    }
+    
+    .company-name {
+        font-size: 1.3rem;
+    }
+    
+    .footer-logo .company-name {
+        font-size: 1.6rem;
+    }
 }
 
 @media (max-width: 480px) {
-    h1 {
-        font-size: 2rem;
-    }
+    /* General mobile styles */
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.8rem; }
+    .app-buttons { flex-direction: column; }
     
-    h2 {
-        font-size: 1.8rem;
-    }
-    
-    .app-buttons {
-        flex-direction: column;
-    }
-    
-    .footer-content, .footer-links {
-        flex-direction: column;
-    }
-    
+    /* Root variables */
     :root {
-        --section-margin: 10px; /* Minimal margins on very small screens */
-        --section-border-radius: 15px; /* Smaller border radius on very small screens */
+        --section-margin: 10px;
+        --section-border-radius: 15px;
     }
     
-    .hero::after {
-        height: 70px;
-        bottom: 0;
-    }
+    /* Hero section adjustments */
+    .hero::after { height: 70px; bottom: 0; }
+    .hero::before { height: 100px; bottom: 0; }
+    .stats-container { margin-bottom: 40px; }
     
-    .hero::before {
-        height: 100px;
-        bottom: 0;
-    }
-    
-    .stats-container {
-        margin-bottom: 40px;
-    }
-    
-    nav {
-        padding: 10px 5%; /* Even smaller for very small screens */
-    }
-    
-    .logo img {
-        height: 24px; /* Even smaller for very small screens */
-    }
-    
-    .mobile-menu {
-        width: 100%;
-        max-width: none;
-    }
-    
+    /* Header adjustments */
+    nav { padding: 10px 5%; }
+    .logo img { height: 35px; }
+    .company-name { font-size: 1.1rem; }
+    .mobile-menu { width: 100%; max-width: none; }
     header {
         backdrop-filter: blur(2px);
         -webkit-backdrop-filter: blur(2px);
         background-color: rgba(255, 255, 255, 0.9);
+    }
+    
+    /* FOOTER STYLING - COMPLETE OVERHAUL */
+    footer {
+        padding: 40px 0 20px;
+        text-align: center;
+    }
+    
+    footer .container {
+        width: 90%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Footer Logo Section */
+    .footer-logo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    
+    .footer-logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .footer-logo .company-name {
+        font-size: 1.5rem;
+    }
+    
+    .footer-logo p {
+        text-align: center;
+        margin: 15px 0;
+        width: 100%;
+    }
+    
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 15px auto 0;
+        width: 100%;
+    }
+    
+    /* Footer Links Section */
+    .footer-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-links {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    /* Quick Links and Legal Sections */
+    .footer-column {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    
+    .footer-links .footer-column:nth-child(1),
+    .footer-links .footer-column:nth-child(2) {
+        padding-left: 0;
+    }
+    
+    .footer-column h4 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 1.3rem;
+        position: relative;
+        padding-bottom: 10px;
+    }
+    
+    .footer-column h4::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+        height: 2px;
+        background-color: var(--primary-color);
+    }
+    
+    .footer-column ul {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+    }
+    
+    .footer-column ul li {
+        width: 100%;
+        margin: 8px 0;
+        text-align: center;
+    }
+    
+    .footer-column ul li a {
+        display: inline-block;
+        text-align: center;
+    }
+    
+    /* Download Section */
+    .footer-store-buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .footer-store-btn {
+        width: 80%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    /* Footer Bottom */
+    .footer-bottom {
+        width: 100%;
+        margin-top: 40px;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
     }
 }
 
@@ -970,12 +1117,25 @@ footer {
 .footer-logo {
     display: flex;
     flex-direction: column;
+    align-items: center; /* Keep center alignment for the whole footer-logo section */
     gap: 15px;
 }
 
+.footer-logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px; /* Same gap as in the navbar */
+}
+
 .footer-logo img {
-    height: 40px;
-    margin-bottom: 10px;
+    height: 50px; /* Same height as in the navbar */
+    margin-bottom: 0;
+}
+
+.footer-logo .company-name {
+    font-size: 1.5rem; /* Same size as in the navbar */
+    margin-bottom: 0;
 }
 
 .social-icons {
@@ -1011,6 +1171,12 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
+}
+
+/* Add specific styling for the first two footer columns */
+.footer-links .footer-column:nth-child(1),
+.footer-links .footer-column:nth-child(2) {
+    padding-left: 40px; /* Add left padding to move these columns to the right */
 }
 
 .footer-column h4 {
@@ -1295,63 +1461,37 @@ footer {
     }
     
     .logo img {
-        height: 28px;
+        height: 45px; /* Slightly smaller on tablets */
+    }
+    
+    .company-name {
+        font-size: 1.3rem;
+    }
+    
+    .footer-logo .company-name {
+        font-size: 1.6rem;
     }
 }
 
-@media (max-width: 480px) {
-    h1 {
-        font-size: 2rem;
+@media (max-width: 768px) {
+    .hamburger {
+        margin-right: 5px;
     }
     
-    h2 {
-        font-size: 1.8rem;
-    }
-    
-    .app-buttons {
-        flex-direction: column;
-    }
-    
-    .footer-content, .footer-links {
-        flex-direction: column;
-    }
-    
-    :root {
-        --section-margin: 10px; /* Minimal margins on very small screens */
-        --section-border-radius: 15px; /* Smaller border radius on very small screens */
-    }
-    
-    .hero::after {
-        height: 70px;
-        bottom: 0;
-    }
-    
-    .hero::before {
-        height: 100px;
-        bottom: 0;
-    }
-    
-    .stats-container {
-        margin-bottom: 40px;
-    }
-    
-    nav {
-        padding: 10px 5%; /* Even smaller for very small screens */
+    .logo {
+        gap: 8px;
     }
     
     .logo img {
-        height: 24px; /* Even smaller for very small screens */
+        height: 40px; /* Smaller on mobile but still prominent */
     }
     
-    .mobile-menu {
-        width: 100%;
-        max-width: none;
+    .company-name {
+        font-size: 1.2rem;
     }
     
-    header {
-        backdrop-filter: blur(2px);
-        -webkit-backdrop-filter: blur(2px);
-        background-color: rgba(255, 255, 255, 0.9);
+    .footer-logo .company-name {
+        font-size: 1.5rem;
     }
 }
 
@@ -1391,6 +1531,7 @@ section:not(.hero) {
 /* Enhanced Footer Store Buttons */
 .footer-store-buttons {
     display: flex;
+    flex-direction: column; /* Changed from row to column */
     gap: 15px;
     margin-top: 20px;
 }
@@ -1714,6 +1855,19 @@ section:not(.hero) {
     }
     
     .logo img {
-        height: 28px;
+        height: 45px; /* Slightly smaller on tablets */
     }
+    
+    .company-name {
+        font-size: 1.3rem;
+    }
+    
+    .footer-logo .company-name {
+        font-size: 1.6rem;
+    }
+}
+
+/* Add a new class for the highlighted words in hero heading */
+.highlight-text {
+    color: var(--primary-color);
 } 
