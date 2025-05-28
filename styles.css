@@ -654,8 +654,12 @@ nav {
     
     /* Header adjustments */
     nav { padding: 10px 5%; }
-    .logo img { height: 35px; }
-    .company-name { font-size: 1.1rem; }
+    .logo img { 
+        height: 70px !important; /* Doubled from 35px to 70px with !important to override other media queries */
+    }
+    .company-name { 
+        font-size: 2.2rem !important; /* Doubled from 1.1rem to 2.2rem with !important to override other media queries */
+    }
     .mobile-menu { width: 100%; max-width: none; }
     header {
         backdrop-filter: blur(2px);
