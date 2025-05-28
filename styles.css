@@ -163,6 +163,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 10px;
+    
 }
 
 .logo img {
@@ -719,6 +720,7 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
+        transform: translateX(-5px); /* Move all footer content 5px to the left */
     }
     
     .footer-links {
