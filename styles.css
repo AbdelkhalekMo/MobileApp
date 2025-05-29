@@ -2001,4 +2001,105 @@ section:not(.hero) {
 .animation-trail {
     pointer-events: none;
     box-shadow: 0 0 8px 2px rgba(74, 107, 255, 0.4);
+}
+
+/* Add specific styles for feature cards that appear on the right side in the image */
+@media (max-width: 767px) {
+    /* Adjust feature cards for better display on smaller screens */
+    .features-phone-mockup {
+        width: 200px; /* Even smaller on very small screens */
+    }
+    
+    .feature-card {
+        width: 180px;
+        height: 180px;
+        padding: 4px; /* Decreased from 10px */
+    }
+    
+    .feature-icon {
+        width: 40px; /* Decreased from 40px */
+        height: 40px; /* Decreased from 40px */
+        margin-bottom: 10px; /* Decreased from 5px */
+    }
+    
+    .feature-icon i {
+        font-size: 1.5rem; /* Decreased from 1.3rem */
+    }
+    
+    .feature-card h3 {
+        font-size: 0.7rem; /* Decreased from 0.8rem */
+        margin-bottom: 2px; /* Decreased from 3px */
+        white-space: nowrap;
+    }
+    
+    .feature-card p {
+        font-size: 0.5rem; /* Decreased from 0.6rem */
+        max-width: 200px; /* Decreased from 115px */
+        margin: 0 0 25px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Feature section adjustments for very small screens */
+    .features-phone-mockup {
+        width: 200px; /* Even smaller on very small screens */
+    }
+    
+    .feature-card {
+        width: 180px;
+        height: 180px;
+        padding: 4px; /* Decreased from 10px */
+    }
+    
+    .feature-icon {
+        width: 40px; /* Decreased from 40px */
+        height: 40px; /* Decreased from 40px */
+        margin-bottom: 10px; /* Decreased from 5px */
+    }
+    
+    .feature-icon i {
+        font-size: 1.5rem; /* Decreased from 1.3rem */
+    }
+    
+    .feature-card h3 {
+        font-size: 0.7rem; /* Decreased from 0.8rem */
+        margin-bottom: 2px; /* Decreased from 3px */
+        white-space: nowrap;
+    }
+    
+    .feature-card p {
+        font-size: 0.5rem; /* Decreased from 0.6rem */
+        max-width: 200px; /* Decreased from 115px */
+        margin: 0 0 25px 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .feature-card {
+        width: 150px;
+        height: 150px;
+        padding: 6px; /* Decreased from 8px */
+    }
+    
+    .feature-icon {
+        width: 30px; /* Decreased from 35px */
+        height: 30px; /* Decreased from 35px */
+        margin-bottom: 2px; /* Decreased from 3px */
+    }
+    
+    .feature-icon i {
+        font-size: 1.1rem; /* Decreased from 1.2rem */
+    }
+    
+    .feature-card h3 {
+        font-size: 0.7rem; /* Decreased from 0.75rem */
+        margin-bottom: 1px; /* Decreased from 2px */
+    }
+    
+    .feature-card p {
+        font-size: 0.5rem; /* Decreased from 0.55rem */
+        -webkit-line-clamp: 2;
+        line-height: 1; /* Decreased from 1.05 */
+        max-width: 90px; /* Decreased from 100px */
+    }
 } 
