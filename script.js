@@ -413,31 +413,69 @@ document.addEventListener('DOMContentLoaded', function() {
                     });
                 }, 600);
                 
-                // Set initial position for cards (at the middle where the phone is)
-                gsap.set(leftCards, {
-                    x: 150, // Start from the middle (phone position)
-                    opacity: 0
-                });
+                // Position top cards higher and bottom cards lower to match red circles
+                // Left cards (top and bottom)
+                if (leftCards.length >= 2) {
+                    // Top left card
+                    gsap.set(leftCards[0], {
+                        x: 150,
+                        y: -30, // Move up to match top red circle
+                        opacity: 0
+                    });
+                    
+                    // Bottom left card
+                    gsap.set(leftCards[1], {
+                        x: 150,
+                        y: 30, // Move down to match bottom red circle
+                        opacity: 0
+                    });
+                } else {
+                    // Fallback if there's only one card
+                    gsap.set(leftCards, {
+                        x: 150,
+                        opacity: 0
+                    });
+                }
                 
-                gsap.set(rightCards, {
-                    x: -150, // Start from the middle (phone position)
-                    opacity: 0
-                });
+                // Right cards (top and bottom)
+                if (rightCards.length >= 2) {
+                    // Top right card
+                    gsap.set(rightCards[0], {
+                        x: -150,
+                        y: -30, // Move up to match top red circle
+                        opacity: 0
+                    });
+                    
+                    // Bottom right card
+                    gsap.set(rightCards[1], {
+                        x: -150,
+                        y: 30, // Move down to match bottom red circle
+                        opacity: 0
+                    });
+                } else {
+                    // Fallback if there's only one card
+                    gsap.set(rightCards, {
+                        x: -150,
+                        opacity: 0
+                    });
+                }
                 
-                // Animate left cards from middle to left
+                // Animate left cards from middle to left with 360-degree rotation
                 gsap.to(leftCards, {
                     opacity: 1,
                     x: 0,
+                    rotation: 360, // Add 360-degree rotation
                     duration: 0.8,
                     stagger: 0.2,
                     delay: 1.2,
                     ease: 'back.out(1.2)'
                 });
                 
-                // Animate right cards from middle to right
+                // Animate right cards from middle to right with 360-degree rotation
                 gsap.to(rightCards, {
                     opacity: 1,
                     x: 0,
+                    rotation: -360, // Add counter-clockwise 360-degree rotation
                     duration: 0.8,
                     stagger: 0.2,
                     delay: 1.2,
